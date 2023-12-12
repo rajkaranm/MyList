@@ -1,18 +1,13 @@
 "use client"
 
 import { useEffect } from 'react';
-
-// Importing boostrap
-import 'bootstrap/dist/css/bootstrap.min.css'
-
-// Custom css file for customization
-import styles from './page.module.css'
+import styles from './page.module.css' // Custom css file for customization
 
 export default function Home() {
-
-  // Importing boostrap js on client side after website is rendered because we will get document is not defined error
+  // Importing boostrap js on client side after website 
+  // is rendered because we will get document is not defined error
   useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.bundle");
+    require("bootstrap/dist/js/bootstrap.bundle"); 
   }, []);
 
   return (
